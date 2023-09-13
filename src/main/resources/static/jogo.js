@@ -1,3 +1,12 @@
+const playerX = prompt("Digite o nome do jogador X:");
+const player0 = prompt("Digite o nome do jogador 0:");
+
+function vencedor(nome) {
+	const mensagem = "O jogador " + nome + " venceu!";
+	console.log(mensagem);
+	window.alert(mensagem);
+}
+
 function myfunc() {
 
 
@@ -24,7 +33,7 @@ window.alert("oi");
 		document.getElementById("b7").disabled = true;
 		document.getElementById("b8").disabled = true;
 		document.getElementById("b9").disabled = true;
-		window.alert('Jogador X venceu');
+		vencedor(playerX);
 	}
 	else if ((b1 == 'x' || b1 == 'X') && (b4 == 'x' ||
 		b4 == 'X') && (b7 == 'x' || b7 == 'X')) {
